@@ -13,6 +13,16 @@ body {
   overflow: hidden;
 }
 
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
+}
+
 #game {
   border-radius: 0;
   background: transparent;
@@ -23,5 +33,62 @@ body {
   height: auto;
   max-width: 1200px;
   display: block;
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-btn {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(180deg, #2a3441 0%, #1e2835 50%, #151b26 100%);
+  border: 3px solid rgba(150, 200, 255, 0.6);
+  border-radius: 0;
+  image-rendering: pixelated;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #e8f4ff;
+  text-shadow: 0 0 8px rgba(100, 180, 255, 0.6);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: none;
+  position: relative;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 12px rgba(100, 180, 255, 0.2);
+}
+
+.control-btn:active,
+.control-btn.active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3), 0 0 8px rgba(100, 180, 255, 0.3);
+  background: linear-gradient(180deg, #1e2835 0%, #151b26 50%, #0f1620 100%);
+}
+
+.control-btn:hover {
+  border-color: rgba(150, 200, 255, 0.9);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 16px rgba(100, 180, 255, 0.4);
+}
+
+.control-btn span {
+  display: block;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .control-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+  
+  .controls {
+    gap: 1.5rem;
+  }
 }
 
