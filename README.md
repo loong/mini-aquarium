@@ -1,4 +1,4 @@
-# Chloe's Mini Oceanium
+# Chloe's Mini Oceanarium
 
 A pixel art aquarium game featuring Chloe walking through a beautiful Tokyo-style aquarium.
 

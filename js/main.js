@@ -518,7 +518,7 @@ function drawPlaque() {
   ctx.font = "bold 16px 'Courier New', monospace";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.fillText("Chloe's Mini Oceanium", plaqueX + plaqueWidth * 0.5, plaqueY + plaqueHeight * 0.5);
+  ctx.fillText("Chloe's Mini Oceanarium", plaqueX + plaqueWidth * 0.5, plaqueY + plaqueHeight * 0.5);
 
   ctx.restore();
 }
