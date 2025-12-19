@@ -738,3 +738,22 @@ function tryStartGame() {
   requestAnimationFrame(loop);
 }
 
+const messageOverlay = document.getElementById("message-overlay");
+const messageClose = document.getElementById("message-close");
+
+if (messageClose) {
+  messageClose.addEventListener("click", () => {
+    if (messageOverlay) {
+      messageOverlay.classList.add("hidden");
+    }
+  });
+}
+
+if (messageOverlay) {
+  messageOverlay.addEventListener("click", (e) => {
+    if (e.target === messageOverlay) {
+      messageOverlay.classList.add("hidden");
+    }
+  });
+}
+
